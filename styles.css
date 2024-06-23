@@ -1,0 +1,140 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: #779de0;
+}
+
+
+/* Style for the left side (logo and name) */
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    /* Replace with your logo image URL */
+    background-image: url("rec.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.website-name {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+
+/* Style for the right side (navigation) */
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+#login {
+    transition-duration: 0.4s;
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    color: black;
+    background-color: #779de0;
+    border: none;
+}
+
+#login:hover {
+    background-color: #e0e0e0;
+    /* Green */
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Style for icons (adjust as needed) */
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+    /* Replace with your notification icon URL */
+    background-image: url("noticon.png");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.45s cubic-bezier(0.3, 0.4, 0.1, 1), opacity 0.45s cubic-bezier(0.3, 0.4, 0.1, 1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.55;
+}
+
+.icon:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #779de0;
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Dropdown container - needed to position the dropdown content */
+
+.dropdown {
+    display: inline-block;
+}
+
+
+/* Dropdown Content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the button is clicked) */
+
+.show {
+    display: block;
+}
