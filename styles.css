@@ -6,7 +6,9 @@ header {
     border-radius: 10px;
     background-color: #779de0;
 }
-
+body{
+  background-color: #A9CCE3;
+}
 
 /* Style for the left side (logo and name) */
 
@@ -141,4 +143,73 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* styles.css */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation: fade 1.5s;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.impevent{
+  width:100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+  
+}
+
+.impi{
+  text-align: center;
+}
+
+/* Basic Reset */
+
+/*
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f1f1f1; 
+    text-align: center;
+    padding: 10px;
+}
+*/
 
