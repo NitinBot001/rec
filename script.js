@@ -35,3 +35,24 @@ function showSlides() {
 }
 
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const popupButton = document.getElementById('popupButton');
+    const popup = document.getElementById('popup');
+    const close = document.querySelector('.close');
+
+    popupButton.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    close.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
+
+
