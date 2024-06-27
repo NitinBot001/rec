@@ -48,7 +48,7 @@ nav a {
 
 #Nirf{
     transition-duration: 0.4s;
-    height: 35px;
+    height: 100%;
     width: 80px;
     border-radius: 10px;
     color: black;
@@ -104,8 +104,6 @@ nav a:hover {
 .navbar .dropdown .dropbtn {
     border-radius: 10px;
     font-size: 16px;
-    border: none;
-    outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
@@ -174,7 +172,7 @@ nav a:hover {
 
 .impevent{
   width:100%;
-  height: 80px;
+  height: calc(100%+200px);
   background-color: white;
   border-radius: 5px;
   margin: auto;
@@ -194,6 +192,11 @@ nav a:hover {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
+}
+
+.update{
+  height: calc(100%+50px);
+  width:100%
 }
 
 .right {
@@ -229,13 +232,13 @@ nav a:hover {
             flex-direction: column;
         }
         .existing-div {
-            background-color: lightgray; /* Example style for existing div */
+            background-color: #b6cfde; /* Example style for existing div */
             padding: 10px;
             border-radius: 10px;
-            height: 330px;
+            height: 100%;
         }
           .existing-div2 {
-            background-color: lightgray; /* Example style for existing div */
+            background-color: #b6cfde; /* Example style for existing div */
             padding: 10px;
             margin-top: 10px;
             border-radius: 10px;
@@ -243,17 +246,17 @@ nav a:hover {
         }
         .new-div2 {
             margin-top: 0px; /* 5px distance between divs */
-            background-color: whitesmoke;
+            background-color: #b6cfde;
             padding: 10px;
             border-radius: 10px;
             height: 200px;
         }
         .new-div {
             margin-top: 10px; /* 5px distance between divs */
-            background-color: whitesmoke;
+            background-color: #b6cfde;
             padding: 10px;
             border-radius: 10px;
-            height: 430px;
+            height: 455px;
         }
 .footer{
   margin:10px;
@@ -261,14 +264,18 @@ nav a:hover {
   height: 150px;
   width:100%;
   bottom: 0;
-  margin-left: 0;
+  display: flex;
   text-align: center;
   
+}
+.pricon{
+  margin: 0 auto;
 }
 
 
 .pripho{
   text-align: center;
+  margin-top: 10 px;
 }
 .priname{
   text-align: center;
@@ -280,6 +287,7 @@ nav a:hover {
 .imgi{
   border:2px solid #555;
   border-radius: 3px;
+  margin-top: 20px;
 }
 
 .msg{
@@ -324,5 +332,90 @@ body {
     cursor: pointer;
 }
 
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+html, body {
+            height: 100%;
+        }
 
+        body {
+            display: flex;
+            flex-direction: column;
+        }
 
+.content {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    color: gray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header {
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #779de0 ;
+    color: #007BFF;
+  border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+body.dark-mode header{
+    background-color: #182e6f;
+  color: white;
+}
+
+body.dark-mode .dropdown{
+    background-color: #182e6f;
+  color: white;
+  outline-color: black;
+}
+
+body.dark-mode BUTTON{
+    background-color: #182e6f;
+  color: white;
+}
+
+body.dark-mode .navbar{
+    background-color: #182e6f;
+  color: white;
+}
