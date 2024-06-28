@@ -1,0 +1,508 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: #779de0;
+}
+
+body {
+    background-color: #A9CCE3;
+}
+
+
+/* Style for the left side (logo and name) */
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    /* Replace with your logo image URL */
+    background-image: url("rec.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.webname {
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 30px;
+}
+
+
+/* Style for the right side (navigation) */
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+}
+
+#Nirf {
+    transition-duration: 0.4s;
+    height: 100%;
+    width: 80px;
+    border-radius: 10px;
+    color: black;
+    background-color: #779de0;
+    border: none;
+}
+
+#Nirf:hover {
+    background-color: #e0e0e0;
+    /* Green */
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Style for icons (adjust as needed) */
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+    /* Replace with your notification icon URL */
+    background-image: url("noticon.png");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.45s cubic-bezier(0.3, 0.4, 0.1, 1), opacity 0.45s cubic-bezier(0.3, 0.4, 0.1, 1);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.55;
+}
+
+.icon:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #779de0;
+    /*border-radius: 10px;*/
+}
+
+.navbar .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* styles.css */
+.slideshow-container {
+  width:100%;
+    max-width: 700px; 
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+.impevent {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.impi {
+    text-align: center;
+}
+
+#gou1 {
+    height: 500px;
+    width: 49%;
+    background-color: whitesmoke;
+    float: left;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.update {
+    height: calc(100%+50px);
+    width: 100%;
+  text-align: center;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    height: 740px;
+    width: 49%;
+    float: left;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+#gou3 {
+    height: auto;
+    width: 20px;
+    background-color: red;
+    margin-top: 5px;
+    border-radius: 7px;
+    display: inline;
+}
+
+.container {
+    display: flex;
+}
+
+.right {
+    width: 49%;
+    border-radius: 10px;
+}
+
+.left {
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+  height: auto;
+}
+
+.existing-div {
+    background-color: #b6cfde;
+    /* Example style for existing div */
+    padding: 10px;
+    border-radius: 10px;
+    height: 350px;
+  overflow: hidden;
+  position: relative;
+    max-height: 250px;
+}
+
+.existing-div2 {
+    background-color: #b6cfde;
+    /* Example style for existing div */
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.new-div2 {
+    margin-top: 0px;
+    margin-right: 20px;
+    /* 5px distance between divs */
+    background-color: #b6cfde;
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.new-div {
+    margin-top: 10px;
+    /* 5px distance between divs */
+    background-color: #b6cfde;
+    padding: 10px;
+    border-radius: 10px;
+    height: 455px;
+}
+
+.footer {
+    background-color: gray;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+}
+
+.pricon {
+    margin: 0 auto;
+}
+
+.pripho {
+    text-align: center;
+    margin-top: 10 px;
+}
+
+.priname {
+    text-align: center;
+    position: relative;
+    top: 0;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.imgi {
+    border: 2px solid #555;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.msg {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    z-index: 1000;
+    /* Added to ensure the popup is on top */
+}
+
+.popup-content {
+    position: absolute;
+    /* Added to position close button inside the popup */
+    background-color: #fff;
+    top: 0;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 600px;
+    text-align: center;
+    z-index: 1001;
+    /* Added to ensure the popup content is on top of the overlay */
+}
+
+.upde {
+    color: rgb(69, 215, 231);
+}
+
+.ewa {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    color: #000000;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+  width:100%;
+    text-align: center;
+    padding: 1em 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: gray;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: rgb(24, 38, 75);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #779de0;
+    color: #007BFF;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+body.dark-mode header {
+    background-color: #182e6f;
+    color: white;
+}
+
+body.dark-mode .dropdown {
+    background-color: #182e6f;
+    color: white;
+    outline-color: black;
+}
+
+body.dark-mode BUTTON {
+    background-color: #182e6f;
+    color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #182e6f;
+    color: white;
+}
+
+body.dark-mode .impevent {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark-mode .existing-div {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark-mode .existing-div2 {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark-mode .new-div {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark-mode .new-div2 {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+body.dark-mode .popup-content {
+    background-color: #333;
+    color: #f9f9f9;
+}
+svg{
+  max-height: 300px;
+  max-height: 140px;
+}
+
+.google_translate_element{
+  height: 100%;
+  width:100%;
+}

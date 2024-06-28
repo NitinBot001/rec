@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Translate Website Content</title>
+</head>
+<body>
+<select id="languageSelect">
+  <option value="en">Select Language</option>
+  <option value="hi">Hindi</option>
+  <option value="bn">Bengali</option>
+  <option value="te">Telugu</option>
+  <option value="ta">Tamil</option>
+</select>
+
+<div id="contentToTranslate">
+  <h1>Welcome to My Website</h1>
+  <p>This is a sample paragraph that will be translated.</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,ta,te,kn,mr,bn,gu,ur,pa,ml,or,as,ne', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<div id="google_translate_element"></div>
+</body>
+</html>
